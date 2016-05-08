@@ -1,0 +1,36 @@
+<md-sidenav-layout>
+    <md-sidenav opened="true" #sidenav mode="side" class="liveres-sidenav">
+        <div class="categoriesheader">
+            <md-list-item>
+                <span>Sidenav stuff</span>
+            </md-list-item>
+            </div>
+        <div class="categorylist">
+            <div *ngFor="let cat of cats">
+                <resume-cat [category]="cat.category"
+                [icon]="cat.icon"></resume-cat>
+            </div>
+        </div>
+    </md-sidenav>
+    <md-toolbar color="primary">
+        <button class="liveres-icon-button" (click)="sidenav.toggle()">
+            <i class="material-icons app-toolbar-menu">menu</i>
+        </button>
+        <span>Resume</span>
+    </md-toolbar>
+    <div class="app-content">
+        <contact-component [phone]="contact.phone"
+        [email]="contact.email" [url]="contact.url">
+        </contact-component>
+        <slider-component></slider-component>
+        <about-me></about-me>
+        <projects-component></projects-component>
+        <educations-component></educations-component>
+        <employment-list></employment-list>
+        <skills-list></skills-list>
+        <language-list></language-list>
+        <award-list></award-list>
+    </div>
+</md-sidenav-layout>
+
+<router-outlet></router-outlet>
