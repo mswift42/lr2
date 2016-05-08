@@ -1,9 +1,9 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { Lr2AppComponent, environment } from './app/';
+import {LiveresApp, environment} from './app/';
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
-bootstrap(Lr2AppComponent);
+bootstrap(LiveresApp);
