@@ -17,7 +17,7 @@ import {SectionComponent} from '../section-component/section-component';
 })
 export class SliderComponent {
     images: SliderImage[];
-    activeIndex: number = 1;
+    activeIndex: number = 0;
 
     constructor(_sliderService: SliderService) {
         this.images = _sliderService.getSampleImages();
@@ -25,5 +25,16 @@ export class SliderComponent {
 
     isActiveIndex(i: number): boolean {
         return i == this.activeIndex;
+    }
+    increaseActiveIndex() {
+        if (this.activeIndex < this.images.length) {
+            this.activeIndex++;
+        }
+    }
+
+    decreaseActiveIndex() {
+        if (this.activeIndex > 0) {
+            this.activeIndex--;
+        }
     }
 }
