@@ -1,0 +1,26 @@
+.slidercontainer {
+    width:98%;
+    height:auto;
+    padding:4px;
+}
+.imagecontainer {
+    margin:auto;
+    position: relative;
+    max-width:100%;
+    max-height:100%;
+}
+.imagecontainer .after {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    color:#fff;
+}
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+

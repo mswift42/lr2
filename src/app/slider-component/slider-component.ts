@@ -17,7 +17,7 @@ import {SectionComponent} from '../section-component/section-component';
 })
 export class SliderComponent {
     images: SliderImage[];
-    activeIndex: number = 0;
+    activeIndex: number = 1;
 
     constructor(_sliderService: SliderService) {
         this.images = _sliderService.getSampleImages();
