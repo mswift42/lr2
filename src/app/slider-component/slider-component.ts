@@ -6,6 +6,7 @@ import {CaptionComponent} from '../caption-component/caption-component';
 import {SectionComponent} from '../section-component/section-component';
 
 
+
 @Component({
     selector: 'slider-component',
     templateUrl: 'app//slider-component/slider-component.html',
@@ -26,6 +27,7 @@ export class SliderComponent {
     isActiveIndex(i: number): boolean {
         return i == this.activeIndex;
     }
+
     increaseActiveIndex() {
         if (this.activeIndex < this.images.length) {
             this.activeIndex++;

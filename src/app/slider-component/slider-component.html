@@ -5,8 +5,11 @@
       <div class="imagecontainer" *ngIf="isActiveIndex(i)">
         <image-component [url]="img.url" [alttext]="img.title">
         </image-component>
+        <md-icon class="after">keyboard_arrow_right</md-icon>
         <caption-component class="after" [captiontitle]="img.title"
                            [captiontext]="img.detail"></caption-component>
+        <i (click)="decreaseActiveIndex()" class="material-icons">keyboard_arrow_left</i>
+        <i (click)="increaseActiveIndex()" class="material-icons">keyboard_arrow_left</i>
       </div>
     </div>
 </div>
