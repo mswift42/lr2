@@ -22,5 +22,9 @@
     display: block;
     background: rgba(0, 0, 0, .6);
 }
+i {
+  cursor: pointer;
+  cursor: hand;
+}
 
 
