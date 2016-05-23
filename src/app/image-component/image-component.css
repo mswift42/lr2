@@ -1,4 +1,10 @@
 .imagesection {
-    height:auto;
-    margin:auto;
+  max-width: 320px;
+  height: auto;
+  margin: auto;
+}
+
+.image {
+  width:90%;
+  height:auto;
 }
