@@ -29,7 +29,7 @@ export class SliderComponent {
     }
 
     increaseActiveIndex() {
-        if (this.activeIndex < this.images.length) {
+        if (this.activeIndex < this.images.length - 1) {
             this.activeIndex++;
         }
     }
